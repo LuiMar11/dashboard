@@ -1,84 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="app.css" />
-    <link rel="stylesheet" href="https://kit.fontawesome.com/a9534e2e6b.css" crossorigin="anonymous" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/a9534e2e6b.css"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <nav class="sidenav">
-        <img src="https://cdn-icons-png.flaticon.com/512/924/924915.png" class="icon" />
-        <p class="name">Jhon Doe</p>
-        <hr class="hr" />
-        <a href="#" class="active"><i class="fas fa-th-list"></i> Dashboard</a>
-        <a href="#"><i class="far fa-calendar"></i> Calendar</a>
-        <a href="#"><i class="far fa-envelope"></i> Inbox</a>
-        <a href="#"><i class="fas fa-qrcode"></i> Widget</a>
-        <a href="#"><i class="fas fa-tag"></i> Tasks</a>
-        <a href="#"><i class="far fa-circle-user"></i> Profile</a>
-        <a href="#"><i class="fas fa-pen"></i> Write post</a>
-        <a href="#"><i class="far fa-clipboard"></i> Pages</a>
-        <a href="#"><i class="fas fa-chart-line"></i> Chart</a>
-        <a href="#"><i class="far fa-comment"></i> Social App</a>
-        <a href="#"><i class="fas fa-cog"></i> Settings</a>
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/924/924915.png"
+        class="icon"
+      />
+      <p class="name">Jhon Doe</p>
+      <hr class="hr" />
+      <a href="#" class="active"><i class="fas fa-th-list"></i> Dashboard</a>
+      <a href="#"><i class="far fa-calendar"></i> Calendar</a>
+      <a href="#"><i class="far fa-envelope"></i> Inbox</a>
+      <a href="#"><i class="fas fa-qrcode"></i> Widget</a>
+      <a href="#"><i class="fas fa-tag"></i> Tasks</a>
+      <a href="#"><i class="far fa-circle-user"></i> Profile</a>
+      <a href="#"><i class="fas fa-pen"></i> Write post</a>
+      <a href="#"><i class="far fa-clipboard"></i> Pages</a>
+      <a href="#"><i class="fas fa-chart-line"></i> Chart</a>
+      <a href="#"><i class="far fa-comment"></i> Social App</a>
+      <a href="#"><i class="fas fa-cog"></i> Settings</a>
     </nav>
 
-    <div class="topnav">
-        <a href="#">DASHBOARD</a>
-        <div class="search-container">
-            <form action="">
-                <input type="text" placeholder="Search" name="search" />
-                <button type="submit">
-                    <img src="https://cdn-icons-png.flaticon.com/512/711/711319.png" class="icon-search" />
-                </button>
-            </form>
-        </div>
-    </div>
+    <nav class="topnav">
+      <a href="#">DASHBOARD</a>
+      <div class="search-container">
+        <form action="">
+          <input type="text" placeholder="Search" name="search" />
+          <button type="submit">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/711/711319.png"
+              class="icon-search"
+            />
+          </button>
+        </form>
+      </div>
+    </nav>
 
     <div class="container">
-        <div class="card-income">
-            <div class="card-income-header">This week income</div>
-            <p class="price"> $ 1250 </p>
-            <br><br><br>
-            <p class="items">Item #1 sold </p>
-            <p class="items"></p>
-            <p class="items">:50</p>
-            <p class="items">Item #2 sold </p>
-            <p class="items"></p>
-            <p class="items">:10</p>
-            <p class="items">Item #3 sold </p>
-            <p class="items"></p>
-            <p class="items">:5</p>
-            <p class="items">Item #4 sold </p>
-            <p class="items"></p>
-            <p class="items">:7</p>
-            <p class="total">Total items sold</p>
-            <p class="total">:72</p>
-        </div>
-        <div class="card">
-            <div class="img"> <img src="/dashboard/img/chart.png" alt=""></div>
-
-        </div>
-        <div class="card">
-            <div class="img"><img src="/dashboard/img/calendar.png"" alt="">
-            </div>
-
-        </div>
+      <div class="card-income">
+        <div class="card-income-header">This week income</div>
+        <p class="price">$ 1250</p>
+        <br /><br /><br />
+        <p class="items">Item #1 sold</p>
+        <p class="items"></p>
+        <p class="items">:50</p>
+        <p class="items">Item #2 sold</p>
+        <p class="items"></p>
+        <p class="items">:10</p>
+        <p class="items">Item #3 sold</p>
+        <p class="items"></p>
+        <p class="items">:5</p>
+        <p class="items">Item #4 sold</p>
+        <p class="items"></p>
+        <p class="items">:7</p>
+        <p class="total">Total items sold</p>
+        <p class="total">:72</p>
+      </div>
+      <div class="card">
+        <div class="img"><img src="/dashboard/img/chart.png" alt="" /></div>
+      </div>
+      <div class="card">
+        <div class="img"><img src="/dashboard/img/calendar.png"" alt=""></div>
+      </div>
     </div>
 
-    <div class=" container-cards">
-                <div class="item1">1</div>
-                <div class="item2">2</div>
-                <div class="item3">3</div>
-            </div>
+    <div class="container-cards">
+      <div class="item1">
+        <div class="item-search">
+          <form action="">
+            <label>Recent orders </label>
+            <input type="search" placeholder="Search..." />
+            <button type="submit">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/711/711319.png"
+                class="icon-search"
+              />
+            </button>
+          </form>
+        </div>
+        <br /><br />
+        <hr />
+      </div>
+      <div class="item2">
+        <div class="item2-header">
+          <label> Recent Comment </label>
+        </div>
+        <br /><br />
+        <hr />
+      </div>
+      <div class="item3">
+        <div class="item-search">
+          <form action="">
+            <label>Contacts</label>
+            <input type="search" placeholder="Search..." />
+            <button type="submit">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/711/711319.png"
+                class="icon-search"
+              />
+            </button>
+          </form>
+        </div>
+        <br /><br />
+        <hr />
+      </div>
+    </div>
 
-
-            <script src=" https://kit.fontawesome.com/a9534e2e6b.js" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src=" https://kit.fontawesome.com/a9534e2e6b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

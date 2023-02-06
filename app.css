@@ -22,7 +22,7 @@ body {
     left            : 0;
     background-color: #373b44;
     background      : linear-gradient(to left, #373b44, #4286f4);
-    overflow        : scroll;
+    overflow        : auto;
     padding-top     : 20px;
 }
 
@@ -127,7 +127,7 @@ a.active {
     cursor      : pointer;
 }
 
-.topnav .search-container button:hover {
+.search-container button:hover {
     background: #ccc;
 }
 
@@ -163,7 +163,7 @@ a.active {
 .card-income {
     background-color: #373b44;
     background      : linear-gradient(to left, #373b44, #4286f4);
-    height          : 220px;
+    height          : auto;
     margin          : 10px;
 }
 
@@ -224,30 +224,98 @@ a.active {
 }
 
 .container-cards {
-    height : 300px;
-    display: grid;
-    grid-template-areas:
-        'card1 card1 card2'
-        'card3 card3 card2';
+    margin-left          : 200px;
+    height               : auto;
+    display              : grid;
+    grid-template-columns: 450px auto;
+    grid-template-areas  :
+        "card1 card2"
+        "card3 card2";
     gap             : 10px;
     background-color: #eaf0f8;
 }
 
 .container-cards div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align      : center;
-    padding         : 20px 0;
-    font-size       : 30px
+    background-color: #FFF;
 }
 
 .item1 {
-    grid-area: card1;
+    margin-left: 10px;
+    grid-area  : card1;
+}
+
+
+.item-search {
+    float: right;
+}
+
+.item1 label {
+    margin-right: 65px;
+    margin-top  : 8px;
+    text-align  : left;
+    font-size   : 15px;
+    display     : inline;
+}
+
+.item-search input[type="search"] {
+    padding         : 6px;
+    margin-top      : 8px;
+    font-size       : 15px;
+    border          : none;
+    background-color: #ebf0f6;
+}
+
+.item-search button {
+    float       : right;
+    padding     : 6px 10px;
+    margin-top  : 8px;
+    margin-right: 16px;
+    font-size   : 15px;
+    background  : #ebf0f6;
+    border      : none;
+    cursor      : pointer;
+}
+
+button[type="submit"]:hover {
+    opacity: 1;
+}
+
+.item-search button:hover {
+    background: #ccc;
+}
+
+.container-cards hr {
+    margin-top: 10px;
+    width     : 100%;
+    border-top: 1px dashed #ccc;
 }
 
 .item2 {
     grid-area: card2;
 }
 
+.item2-header {
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.item2 label {
+    margin-top: 8px;
+    text-align: left;
+    font-size : 15px;
+    display   : inline;
+}
+
 .item3 {
-    grid-area: card3;
+    grid-area  : card3;
+    margin-left: 10px;
+}
+
+.item3 label {
+    margin-right: 90px;
+    margin-top  : 8px;
+    text-align  : left;
+    font-size   : 15px;
+    display     : inline;
 }
